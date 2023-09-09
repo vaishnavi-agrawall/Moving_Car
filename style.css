@@ -1,0 +1,110 @@
+body{
+    margin: 0px 0px;
+        /* background-image: url("img.png");
+        background-repeat: repeat-x; */
+        perspective: 800px;
+}
+div:nth-of-type(1){
+    width: 100%;
+    height: 67vh;
+    position: relative;
+}
+div:nth-of-type(2){
+    position: relative;
+    display: flex;
+    /* overflow-x:hidden; */
+    /* white-space:;
+    overflow-: scroll; */
+    /* justify-content:center; */
+
+
+}
+
+.one #weather{
+    position: relative;
+    top: 0px;
+    right: 0px;
+  /* left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.one #building{
+    height: 500px;
+   width:200%;
+    position: absolute;
+    z-index: 2;
+   
+   left: 0px;
+  animation: move 20s linear infinite;
+}
+.road #car{
+    z-index: 6;
+    height: 200px;
+    width: 400px;
+        margin: 0px auto;
+    /* border: 2px solid black; */
+    animation: 3s  infinite alternate rotate;
+
+}
+
+@keyframes rotate {
+    100%{
+    transform: translatex(5px); 
+
+    }
+}
+.road #highway{
+    height: 250px;
+    width: 500%;
+    /* background-image: url(https://t3.ftcdn.net/jpg/01/11/47/40/360_F_111474023_0BQqfF2GEkeo8Ou3dkAk1eWie6KQ1AKr.jpg); */
+    position: absolute;
+    z-index: 3;
+    /* right: 0px; */
+    /* left: 0px; */
+   /* display: block; */
+   /* background-repeat: repeat-x; */
+   animation: move 2s linear infinite;
+   /* background-repeat: repeat-x; */
+}
+
+@keyframes move {
+    100%{
+        transform: translatex(-1400px);
+    }
+}
+.road #wheel1{
+    position: absolute;
+
+    z-index: 6;
+    right: 100px;
+    bottom: 23px;
+    margin-right:710px ;
+    margin-top: 100px;
+    height:64px;
+    animation: 900ms infinite linear rot;
+    /* margin: 10px auto; */
+}
+/* .road img:nth-of-type(4){
+    z-index: 10;
+} */
+
+@keyframes rot{
+    100%{
+        transform: rotateZ(360deg);
+        /* transform: translatex(5px); */
+
+    }
+}
+.road #wheel2{
+    position: absolute;
+
+    z-index: 6;
+    right: 100px;
+    bottom: 23px;
+    margin-right:498px ;
+    margin-top: 100px;
+    height:65px;
+    animation: 900ms infinite linear rot;
+    /* margin: 10px auto; */
+}
